@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ZSync">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.updates"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity-alias android:name=".IconDefault" android:enabled="true" android:exported="true"
+            android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_alice_thymefield" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_alice_thymefield" android:roundIcon="@mipmap/ic_alice_thymefield" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_anton_ivanov" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_anton_ivanov" android:roundIcon="@mipmap/ic_anton_ivanov" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_aria" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_aria" android:roundIcon="@mipmap/ic_aria" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_asaba_harumasa" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_asaba_harumasa" android:roundIcon="@mipmap/ic_asaba_harumasa" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_asha" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_asha" android:roundIcon="@mipmap/ic_asha" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_astra_yao" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_astra_yao" android:roundIcon="@mipmap/ic_astra_yao" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_belle" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_belle" android:roundIcon="@mipmap/ic_belle" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_ben_bigger" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_ben_bigger" android:roundIcon="@mipmap/ic_ben_bigger" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_bertha" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_bertha" android:roundIcon="@mipmap/ic_bertha" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_billy_kid" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_billy_kid" android:roundIcon="@mipmap/ic_billy_kid" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_blaze" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_blaze" android:roundIcon="@mipmap/ic_blaze" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_burnice_white" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_burnice_white" android:roundIcon="@mipmap/ic_burnice_white" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_caesar_king" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_caesar_king" android:roundIcon="@mipmap/ic_caesar_king" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_cissia" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_cissia" android:roundIcon="@mipmap/ic_cissia" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_claret_flint" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_claret_flint" android:roundIcon="@mipmap/ic_claret_flint" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_coco" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_coco" android:roundIcon="@mipmap/ic_coco" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_corin_wickes" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_corin_wickes" android:roundIcon="@mipmap/ic_corin_wickes" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_dialyn" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_dialyn" android:roundIcon="@mipmap/ic_dialyn" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_ellen_joe" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_ellen_joe" android:roundIcon="@mipmap/ic_ellen_joe" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_evelyn" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_evelyn" android:roundIcon="@mipmap/ic_evelyn" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_grace_howard" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_grace_howard" android:roundIcon="@mipmap/ic_grace_howard" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_hoshimi_miyabi" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_hoshimi_miyabi" android:roundIcon="@mipmap/ic_hoshimi_miyabi" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_hoshimi_miyabi_1" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_hoshimi_miyabi_1" android:roundIcon="@mipmap/ic_hoshimi_miyabi_1" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_hugo_vlad" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_hugo_vlad" android:roundIcon="@mipmap/ic_hugo_vlad" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_isolde" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_isolde" android:roundIcon="@mipmap/ic_isolde" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_jane_doe" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_jane_doe" android:roundIcon="@mipmap/ic_jane_doe" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_ju_fufu" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_ju_fufu" android:roundIcon="@mipmap/ic_ju_fufu" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_komano_manato" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_komano_manato" android:roundIcon="@mipmap/ic_komano_manato" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_lighter" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_lighter" android:roundIcon="@mipmap/ic_lighter" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_lucia_elowen" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_lucia_elowen" android:roundIcon="@mipmap/ic_lucia_elowen" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_lucy" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_lucy" android:roundIcon="@mipmap/ic_lucy" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_nangong_yu" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_nangong_yu" android:roundIcon="@mipmap/ic_nangong_yu" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_nekomata" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_nekomata" android:roundIcon="@mipmap/ic_nekomata" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_nicole_demara" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_nicole_demara" android:roundIcon="@mipmap/ic_nicole_demara" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_norma_hollowell" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_norma_hollowell" android:roundIcon="@mipmap/ic_norma_hollowell" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_orchidea" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_orchidea" android:roundIcon="@mipmap/ic_orchidea" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_orphie_magnusson" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_orphie_magnusson" android:roundIcon="@mipmap/ic_orphie_magnusson" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_pan_yinhu" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_pan_yinhu" android:roundIcon="@mipmap/ic_pan_yinhu" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_phoenix_reffaella" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_phoenix_reffaella" android:roundIcon="@mipmap/ic_phoenix_reffaella" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_piper_wheel" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_piper_wheel" android:roundIcon="@mipmap/ic_piper_wheel" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_promeia" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_promeia" android:roundIcon="@mipmap/ic_promeia" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_qingyi" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_qingyi" android:roundIcon="@mipmap/ic_qingyi" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_remielle_dan_ramiel" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_remielle_dan_ramiel" android:roundIcon="@mipmap/ic_remielle_dan_ramiel" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_remielle_dan_ramiel_1" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_remielle_dan_ramiel_1" android:roundIcon="@mipmap/ic_remielle_dan_ramiel_1" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_rina" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_rina" android:roundIcon="@mipmap/ic_rina" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_roxy_ifrita_pryce" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_roxy_ifrita_pryce" android:roundIcon="@mipmap/ic_roxy_ifrita_pryce" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_seed_flora" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_seed_flora" android:roundIcon="@mipmap/ic_seed_flora" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_seth_lowell" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_seth_lowell" android:roundIcon="@mipmap/ic_seth_lowell" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_severian_lowell" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_severian_lowell" android:roundIcon="@mipmap/ic_severian_lowell" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_sigrid_de_lazur" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_sigrid_de_lazur" android:roundIcon="@mipmap/ic_sigrid_de_lazur" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_soldier_11" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_soldier_11" android:roundIcon="@mipmap/ic_soldier_11" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_soukaku" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_soukaku" android:roundIcon="@mipmap/ic_soukaku" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_sunna" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_sunna" android:roundIcon="@mipmap/ic_sunna" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_susie" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_susie" android:roundIcon="@mipmap/ic_susie" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_sweety" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_sweety" android:roundIcon="@mipmap/ic_sweety" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_tsukishiro_yanagi" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_tsukishiro_yanagi" android:roundIcon="@mipmap/ic_tsukishiro_yanagi" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_ukinami_yuzuha" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_ukinami_yuzuha" android:roundIcon="@mipmap/ic_ukinami_yuzuha" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_velina_airgid" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_velina_airgid" android:roundIcon="@mipmap/ic_velina_airgid" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_venus" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_venus" android:roundIcon="@mipmap/ic_venus" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_vivian_banshee" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_vivian_banshee" android:roundIcon="@mipmap/ic_vivian_banshee" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_von_lycaon" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_von_lycaon" android:roundIcon="@mipmap/ic_von_lycaon" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_wise" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_wise" android:roundIcon="@mipmap/ic_wise" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_ye_shunguang" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_ye_shunguang" android:roundIcon="@mipmap/ic_ye_shunguang" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_yidhari_murphy" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_yidhari_murphy" android:roundIcon="@mipmap/ic_yidhari_murphy" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_yixuan" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_yixuan" android:roundIcon="@mipmap/ic_yixuan" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_zhao" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_zhao" android:roundIcon="@mipmap/ic_zhao" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_zhu_yuan" android:enabled="false" android:exported="true"
+            android:icon="@mipmap/ic_zhu_yuan" android:roundIcon="@mipmap/ic_zhu_yuan" android:targetActivity=".MainActivity">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <receiver android:name=".AutoAlarmReceiver" android:exported="false" />
+
+        <receiver android:name=".BootReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".BatteryWidget" android:exported="true" android:label="@string/widget_battery">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_battery" />
+        </receiver>
+    </application>
+</manifest>
