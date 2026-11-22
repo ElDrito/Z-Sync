@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Z-Sync</string>
+    <string name="widget_battery">Battery</string>
+    <string name="widget_battery_desc">Your battery charge, like in the game</string>
+</resources>
